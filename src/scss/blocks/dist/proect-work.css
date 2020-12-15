@@ -1,0 +1,110 @@
+.proect-work__body {
+  padding: 42px 58px 50px;
+  border: 1px solid rgba(195, 196, 198, 0.5);
+  border-bottom: 9px solid #eeedfa;
+  margin-left: 54px;
+  margin-right: 53px;
+}
+.proect-work__title {
+  color: #8f86de;
+  background: linear-gradient(45deg, #b759d2 33%, #6baee8 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.18px;
+  margin-bottom: 48px;
+}
+.proect-work__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: -26px;
+}
+.proect-work__coll {
+  width: 44.5%;
+  margin-bottom: 37px;
+}
+.proect-work__item {
+  max-width: 390px;
+  justify-content: flex-start;
+}
+.proect-work__icon {
+  width: 42px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 26px;
+}
+.proect-work__icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.proect-work__caption {
+  max-width: calc(100% - 66px);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.13px;
+}
+
+@media (max-width: 1354px) {
+  .proect-work__body {
+    padding: 40px 40px 40px;
+    margin: 0px;
+  }
+}
+@media (max-width: 1010px) {
+  .proect-work__body {
+    padding: 30px 20px;
+    margin: 0px;
+  }
+  .proect-work__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .proect-work__coll {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  .proect-work__icon {
+    width: 34px;
+    height: 30px;
+    margin-right: 16px;
+  }
+  .proect-work__caption {
+    max-width: calc(100% - 50px);
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 760px) {
+  .proect-work__body {
+    padding: 50px 15px 40px;
+    margin: 0px -15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .proect-work__title {
+    margin-bottom: 20px;
+  }
+  .proect-work__coll {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .proect-work__icon {
+    width: 34px;
+    height: 30px;
+    margin-right: 16px;
+  }
+  .proect-work__caption {
+    max-width: calc(100% - 50px);
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

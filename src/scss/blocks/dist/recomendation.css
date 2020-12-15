@@ -1,0 +1,211 @@
+.recomendation {
+  padding-top: 87px;
+  padding-bottom: 60px;
+  background-color: #eeedfa;
+}
+.recomendation__top {
+  margin-bottom: 55px;
+  flex-wrap: wrap;
+}
+.recomendation__top-caption {
+  color: #9085dd;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.17px;
+}
+.recomendation__title {
+  color: #252831;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.22px;
+}
+.recomendation__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -30px -60px;
+}
+.recomendation__coll {
+  display: block;
+  width: calc(33.333% - 60px);
+  margin: 0px 30px 60px;
+  height: 288px;
+  position: relative;
+  z-index: 10;
+  color: #fff;
+}
+.recomendation__coll:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(37, 40, 49, 0.3);
+  z-index: 0;
+}
+.recomendation__bg {
+  width: 100%;
+  height: 100%;
+}
+.recomendation__box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding: 34px 29px;
+}
+.recomendation__caption {
+  width: 100%;
+  font-size: 25px;
+  line-height: 29.04px;
+  margin-bottom: 22px;
+  margin-left: 2px;
+}
+.recomendation__caption strong {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.26px;
+  margin-bottom: 3px;
+}
+.recomendation__caption img {
+  width: 14px;
+  height: 25px;
+  object-fit: contain;
+  display: inline-block;
+  margin-bottom: -4px;
+  margin-left: 5px;
+  transition: all 0.3s;
+}
+.recomendation__caption:hover img {
+  transform: translateX(10px);
+  transition: all 0.3s;
+}
+.recomendation__btn {
+  font-size: 15px;
+  padding: 11px 25px;
+}
+.recomendation__bottom {
+  text-align: center;
+  margin-top: 65px;
+}
+.recomendation__button {
+  display: inline-block;
+  padding: 18px 45px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 31px;
+  background-color: transparent;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background: linear-gradient(45deg, #b759d2 33%, #6baee8 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid #b759d2;
+}
+
+@media (max-width: 1354px) {
+  .recomendation {
+    padding-top: 80px;
+  }
+  .recomendation__top {
+    margin-bottom: 40px;
+  }
+  .recomendation__top-caption {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .recomendation__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .recomendation__row {
+    margin: 0px -10px -40px;
+  }
+  .recomendation__coll {
+    width: calc(33.333% - 20px);
+    margin: 0px 10px 40px;
+    height: 288px;
+  }
+  .recomendation__box {
+    padding: 30px 20px;
+  }
+  .recomendation__caption {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+  .recomendation__bottom {
+    margin-top: 40px;
+  }
+  .recomendation__button {
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1010px) {
+  .recomendation__top-caption {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .recomendation__title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .recomendation__row {
+    margin: 0px -10px -20px;
+  }
+  .recomendation__coll {
+    width: calc(50% - 20px);
+    margin: 0px 10px 20px;
+  }
+}
+@media (max-width: 760px) {
+  .recomendation {
+    padding-top: 60px;
+  }
+  .recomendation__top {
+    margin-bottom: 30px;
+  }
+  .recomendation__top-caption {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .recomendation__title {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .recomendation__row {
+    margin: 0px -10px -20px;
+  }
+  .recomendation__coll {
+    width: 100%;
+    margin: 0px 10px 20px;
+  }
+  .recomendation__box {
+    padding: 25px 15px;
+  }
+  .recomendation__caption {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .recomendation__caption strong {
+    font-size: 24px;
+  }
+  .recomendation__caption img {
+    width: 11px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,387 @@
+.card {
+	background-color: #fff;
+	&__container {
+		padding-top: 86px;
+		padding-bottom: 0px;
+		color: #252831;
+	}
+	&__body {
+		position: relative;
+		z-index: 10;
+		.arrow {
+			position: absolute;
+			top: calc(50% - 32px);
+			background-color: #fff;
+			z-index: 10;
+			opacity: 0;
+			&_prev {
+				left: 0px;
+			}
+			&_next {
+				right: 0px;
+			}
+		}
+		&:hover {
+			.arrow {
+				opacity: 1;
+			}
+		}
+	}
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__left {
+		width: 640px;
+		margin-left: 86px;
+	}
+	&__article {
+		margin-bottom: 56px;
+		h2 {
+			background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.22px;
+			margin: 0px 0px 34px;
+		}
+		h3 {
+			color: #252831;
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 36px;
+			letter-spacing: -0.28px;
+		}
+		p {
+			color: #252831;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 28px;
+			letter-spacing: -0.13px;
+			strong {
+				font-weight: 600;
+			}
+		}
+		ul {
+			li {
+				color: #252831;
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 28px;
+				letter-spacing: -0.13px;
+				&:before {
+					content: "•  ";
+					position: relative;
+					color: #252831;
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 28px;
+					letter-spacing: -0.13px;
+					margin-right: 6px;
+				}
+			}
+		}
+		p + ul {
+			margin-top: 27px;
+		}
+		p + h2,
+		ul + h2 {
+			margin-top: 48px;
+		}
+		p + h3,
+		ul + h3 {
+			margin-top: 64px;
+		}
+	}
+	&__info {
+		margin-bottom: 50px;
+		&-slick {
+			.slick-dots {
+				bottom: 50px;
+				text-align: right;
+				padding-right: 45px;
+				z-index: 10;
+				width: auto;
+				left: auto;
+				right: 0;
+				li {
+					width: 15px;
+					height: 15px;
+					margin: 0 5px;
+					&.slick-active {
+						button {
+							opacity: 1;
+						}
+					}
+					button {
+						width: 15px;
+						height: 15px;
+						border-radius: 50%;
+						cursor: pointer;
+						background-color: #ffffff;
+						opacity: 0.35;
+						&:before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		&-item {
+			height: 416px;
+			position: relative;
+			z-index: 10;
+		}
+		&-bg {
+			width: 100%;
+			height: 100%;
+		}
+		&-box {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			padding: 46px 49px 48px;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: space-between;
+		}
+		&-title {
+			display: inline-block;
+			background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 16px;
+			font-weight: 500;
+		}
+		&-bottom {
+			width: 100%;
+		}
+		&-caption {
+			color: #ffffff;
+			font-size: 24px;
+			line-height: 28px;
+			strong {
+				display: block;
+				font-weight: 600;
+				margin-bottom: 6px;
+			}
+		}
+		&-btn {
+			padding: 11px 25px;
+			font-size: 15px;
+			margin-top: 26px;
+			z-index: 100;
+		}
+	}
+	&__right {
+		width: 406px;
+		margin-right: 69px;
+		margin-top: 8px;
+	}
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		margin-bottom: 16px;
+		&-caption {
+			opacity: 0.5;
+			color: #52555b;
+			font-size: 16px;
+			font-weight: 500;
+			margin-bottom: 9px;
+		}
+		&-tegs {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		&-teg {
+			display: block;
+			color: #252831;
+			font-size: 15px;
+			font-weight: 500;
+			padding: 10px 23px;
+			border-radius: 50px;
+			border: 1px solid rgba(195, 196, 198, 0.5);
+			margin-right: 5px;
+			margin-bottom: 12px;
+			transition: all 0.3s;
+			&:hover {
+				color: #fff;
+				background-color: #252831;
+				border-color: #252831;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__body {
+		margin-top: 22px;
+		margin-bottom: 79px;
+	}
+	&__img {
+		display: block;
+		height: 384px;
+	}
+	&__swipper {
+		overflow: visible;
+	}
+}
+.card + .main-request {
+	padding-top: 27px;
+}
+@media (max-width: 1354px) {
+	.card {
+		&__left {
+			width: 600px;
+			margin-left: 0;
+		}
+		&__right {
+			width: 340px;
+			margin-right: 0;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.card {
+		&__body {
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+		&__container {
+			padding-top: 60px;
+		}
+		&__wrap {
+			flex-wrap: wrap;
+		}
+		&__left {
+			width: 100%;
+			order: 2;
+		}
+		&__right {
+			width: 100%;
+			order: 1;
+			margin-bottom: 30px;
+		}
+		&__item {
+			margin-bottom: 16px;
+			margin-right: 20px;
+		}
+		&__article {
+			margin-bottom: 40px;
+			h2 {
+				font-size: 28px;
+				margin: 0 0 15px;
+			}
+			h3 {
+				font-size: 22px;
+				line-height: 28px;
+			}
+			ul + h2 {
+				margin-top: 35px;
+			}
+			p + h3,
+			ul + h3 {
+				margin-top: 30px;
+			}
+		}
+		&__info {
+			margin-bottom: 40px;
+		}
+		&__img {
+			height: 300px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.card {
+		&__body {
+			margin-top: 0;
+			margin-bottom: 40px;
+			.arrow {
+				display: none;
+			}
+		}
+		&__container {
+			padding-top: 60px;
+		}
+		&__wrap {
+			flex-wrap: wrap;
+		}
+		&__left {
+			width: 100%;
+			order: 2;
+		}
+		&__right {
+			width: 100%;
+			order: 1;
+			margin-bottom: 30px;
+		}
+		&__item {
+			margin-bottom: 10px;
+			margin-right: 10px;
+			&-caption {
+				margin-bottom: 7px;
+			}
+			&-teg {
+				font-size: 14px;
+				padding: 10px 20px;
+				margin-bottom: 10px;
+			}
+		}
+		&__article {
+			margin-bottom: 30px;
+			h2 {
+				font-size: 24px;
+			}
+			h3 {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			p + ul {
+				margin-top: 15px;
+			}
+			p,
+			ul li,
+			ul li:before {
+				font-size: 16px;
+				line-height: 22px;
+			}
+			ul + h2 {
+				margin-top: 35px;
+			}
+			p + h3,
+			ul + h3 {
+				margin-top: 30px;
+			}
+		}
+		&__info {
+			margin-bottom: 30px;
+			&-slick {
+				.slick-dots {
+					bottom: 35px;
+					padding-right: 15px;
+				}
+			}
+			&-box {
+				padding: 30px 20px 30px;
+			}
+			&-item {
+				height: 300px;
+			}
+			&-caption {
+				font-size: 20px;
+				line-height: 23px;
+			}
+			&-btn {
+				font-size: 14px;
+				margin-top: 15px;
+			}
+		}
+		&__img {
+			height: 210px;
+		}
+	}
+}

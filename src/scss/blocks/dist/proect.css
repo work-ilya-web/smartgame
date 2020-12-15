@@ -1,0 +1,13 @@
+.proect {
+  background-color: #fff;
+  color: #252831;
+}
+.proect .main-request__wrap {
+  max-width: 700px;
+}
+.proect .main-request__btn {
+  background-image: linear-gradient(to right, #b759d2 0%, #6baee8 100%);
+}
+.proect .main-request__btn:after {
+  background-image: linear-gradient(to right, #f83b87 0%, #f35445 100%);
+}

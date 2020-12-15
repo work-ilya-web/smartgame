@@ -1,0 +1,21 @@
+.proect {
+	background-color: #fff;
+	color: #252831;
+	.main-request {
+		&__wrap {
+			max-width: 700px;
+		}
+		&__btn {
+			background-image: linear-gradient(to right, #b759d2 0%, #6baee8 100%);
+			&:after {
+				background-image: linear-gradient(to right, #f83b87 0%, #f35445 100%);
+			}
+		}
+	}
+}
+@media (max-width: 1354px) {
+}
+@media (max-width: 1010px) {
+}
+@media (max-width: 760px) {
+}

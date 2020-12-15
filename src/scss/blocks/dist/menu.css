@@ -1,0 +1,126 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: #252831;
+  z-index: 900;
+  padding-top: 95px;
+  padding-bottom: 70px;
+  transform: translateY(-100%);
+  transition: all 0.3s;
+}
+.menu.active {
+  transform: translateY(0);
+  transition: all 0.3s;
+}
+.menu__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.menu__left {
+  max-width: 300px;
+}
+.menu__right {
+  width: 703px;
+}
+.menu__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  padding-bottom: 34px;
+}
+.menu__btn {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px 26px;
+  border: 1px solid rgba(195, 196, 198, 0.2);
+}
+.menu__btn span {
+  background: linear-gradient(45deg, #c33cc3 33%, #c33cc3 66%, #e5007d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__btn img {
+  width: 14px;
+  height: 20px;
+  margin-left: 13px;
+  object-fit: contain;
+}
+.menu__btn_mobile {
+  display: none;
+}
+.menu__list ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu__list ul li {
+  width: 45%;
+  margin-bottom: 25px;
+}
+.menu__list ul li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.menu__list ul li a img {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+.menu__list ul li a:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1354px) {
+  .menu__right {
+    width: 640px;
+  }
+  .menu__list ul li a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1010px) {
+  .menu {
+    height: 100vh;
+  }
+  .menu__left {
+    max-width: 100%;
+    width: 100%;
+  }
+  .menu__right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .menu__list ul li a {
+    font-size: 17px;
+  }
+  .menu__btn {
+    display: none;
+    font-size: 16px;
+    padding: 17px 30px;
+  }
+  .menu__btn_mobile {
+    display: inline-flex;
+  }
+}
+@media (max-width: 760px) {
+  .menu__title {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  .menu__list ul li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

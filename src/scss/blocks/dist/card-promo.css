@@ -1,0 +1,287 @@
+.card-promo {
+  margin-top: 92px;
+  background-image: url(../img/card-promo/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 79px;
+  padding-bottom: 43px;
+}
+.card-promo .breadcrumbs ul li {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-promo .breadcrumbs ul li:after {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-promo .breadcrumbs ul li a {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.card-promo__left {
+  width: 530px;
+  color: #ffffff;
+  margin-left: 56px;
+  margin-top: -42px;
+}
+.card-promo__left-btn {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 14px 27px;
+  border-radius: 24px;
+  border: 1px solid rgba(195, 196, 198, 0.65);
+}
+.card-promo__title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 100px;
+  margin-top: 1px;
+  margin-bottom: 25px;
+  margin-left: -2px;
+}
+.card-promo__subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 44px;
+}
+.card-promo__right {
+  width: 406px;
+  margin-right: 82px;
+  text-align: center;
+}
+.card-promo__right-desc {
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.card-promo__top {
+  padding: 33px 59px 40px;
+  background-color: rgba(48, 51, 60, 0.65);
+}
+.card-promo__top-caption {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: -0.17px;
+  margin-bottom: 30px;
+}
+.card-promo__bottom {
+  background-color: #30333c;
+  padding: 34px 50px 45px;
+}
+.card-promo__bottom-caption {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.card-promo__bottom-price {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+.card-promo__bottom-price span {
+  font-size: 28px;
+}
+.card-promo__fork {
+  justify-content: center;
+  margin-bottom: 22px;
+}
+.card-promo__fork-icon {
+  width: 9px;
+  height: 26px;
+  margin-right: 10px;
+}
+.card-promo__fork-value {
+  font-size: 16px;
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+.card-promo__fork-questions {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+}
+.card-promo__fork-questions__hint {
+  position: absolute;
+  bottom: 45px;
+  left: calc(50% - 127.5px);
+  width: 255px;
+  background-color: #252831;
+  padding: 23px 18px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s;
+}
+.card-promo__fork-questions__hint:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid #252831;
+  border-bottom: 10px solid transparent;
+  bottom: -15px;
+  left: calc(50% - 7.5px);
+  z-index: 10;
+  transform: rotate(90deg);
+}
+.card-promo__fork-questions:hover .card-promo__fork-questions__hint {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 0.3s;
+}
+.card-promo__button {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding: 21px 50px;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #f83b87 0%, #f35445 100%);
+  margin-top: 25px;
+}
+
+@media (max-width: 1354px) {
+  .card-promo__left {
+    width: 530px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .card-promo__title {
+    font-size: 52px;
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+  .card-promo__subtitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
+  .card-promo__right {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1010px) {
+  .card-promo {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .card-promo .breadcrumbs ul {
+    justify-content: center;
+  }
+  .card-promo__body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-promo__left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .card-promo__title {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .card-promo__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 550px;
+    margin: 0px auto 25px;
+  }
+  .card-promo__right {
+    margin-right: 0;
+  }
+}
+@media (max-width: 760px) {
+  .card-promo {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+  .card-promo .breadcrumbs ul {
+    justify-content: center;
+  }
+  .card-promo__body {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card-promo__left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .card-promo__left-btn {
+    font-size: 14px;
+    padding: 13px 25px;
+  }
+  .card-promo__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .card-promo__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 550px;
+    margin: 0 auto 20px;
+  }
+  .card-promo__top {
+    padding: 25px 20px 30px;
+  }
+  .card-promo__top-caption {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .card-promo__right {
+    margin-right: 0;
+  }
+  .card-promo__bottom {
+    padding: 25px 20px 30px;
+  }
+  .card-promo__bottom-caption {
+    font-size: 17px;
+  }
+  .card-promo__bottom-price {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .card-promo__bottom-price span {
+    font-size: 24px;
+  }
+  .card-promo__button {
+    font-size: 16px;
+    padding: 16px 40px;
+  }
+}
+@media (max-width: 450px) {
+  .card-promo__fork .card-promo__fork-questions__hint {
+    left: calc(50% - 196px);
+  }
+  .card-promo__fork .card-promo__fork-questions__hint:after {
+    left: calc(50% + 61.5px);
+  }
+}

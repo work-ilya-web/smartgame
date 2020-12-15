@@ -1,0 +1,347 @@
+.catalog {
+  padding-top: 184px;
+  background-color: #fff;
+}
+.catalog .breadcrumbs ul li {
+  color: #b4b4b4;
+}
+.catalog .breadcrumbs ul li a {
+  color: #b4b4b4;
+}
+.catalog .page-top__title {
+  max-width: 790px;
+  color: #252831;
+}
+.catalog__caption {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35.97px;
+  letter-spacing: -0.28px;
+  margin-bottom: 36px;
+}
+.catalog__promo {
+  margin: 0px 60px;
+  position: relative;
+  z-index: 10;
+  padding-top: 273px;
+  padding-bottom: 113px;
+}
+.catalog__promo-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.catalog__promo-box {
+  max-width: 600px;
+  margin-left: 73px;
+}
+.catalog__promo-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+.catalog__promo-title img {
+  width: 37px;
+  height: 39px;
+  object-fit: contain;
+  display: inline-block;
+}
+.catalog__promo-subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 15px;
+  margin-bottom: 33px;
+}
+.catalog__request {
+  padding-top: 99px;
+  padding-bottom: 114px;
+}
+.catalog__request-box {
+  max-width: 670px;
+  margin: 0px auto;
+  text-align: center;
+}
+.catalog__request-title {
+  color: #252831;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.14px;
+  margin-bottom: 29px;
+}
+.catalog__request-btn {
+  border: 1px solid rgba(195, 196, 198, 0.5);
+  background: linear-gradient(45deg, #c33cc3 33%, #e5017e 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
+.catalog__request-btn img {
+  width: 12px;
+  height: 16px;
+  margin-left: 10px;
+  object-fit: contain;
+}
+.catalog__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -32px -76px;
+  padding-bottom: 20px;
+}
+.catalog__coll {
+  width: calc(50% - 64px);
+  margin: 0px 32px 76px;
+  position: relative;
+}
+.catalog__coll:nth-child(2n) {
+  top: 67px;
+}
+.catalog__coll-img {
+  display: block;
+  width: 100%;
+  height: 358px;
+  overflow: hidden;
+}
+.catalog__coll-img img {
+  transition: all 0.3s;
+}
+.catalog__coll-img:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.catalog__coll-box {
+  padding: 62px 55px 75px;
+  background-color: #feeef0;
+  color: #252831;
+}
+.catalog__coll-title {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.12px;
+  color: #252831;
+}
+.catalog__coll-title img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  object-fit: contain;
+  margin-right: 14px;
+}
+.catalog__coll-title:hover {
+  color: #30333c;
+}
+.catalog__coll-subtitle {
+  max-width: 480px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 18px;
+  margin-bottom: 33px;
+}
+.catalog__coll-btn {
+  font-size: 18px;
+  padding: 15px 25px;
+}
+.catalog__coll-btn img {
+  width: 12px;
+  height: 26px;
+  margin-left: 18px;
+  object-fit: contain;
+}
+
+@media (max-width: 1354px) {
+  .catalog {
+    padding-top: 160px;
+  }
+  .catalog__caption {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .catalog__promo {
+    margin: 0px;
+    padding-top: 250px;
+    padding-bottom: 100px;
+  }
+  .catalog__promo-box {
+    max-width: 550px;
+    margin: 0px;
+  }
+  .catalog__promo-title {
+    font-size: 44px;
+  }
+  .catalog__promo-subtitle {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  .catalog__request {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .catalog__row {
+    margin: 0 -15px -60px;
+  }
+  .catalog__coll {
+    width: calc(50% - 30px);
+    margin: 0 15px 60px;
+  }
+  .catalog__coll-img {
+    height: 280px;
+  }
+  .catalog__coll-title {
+    font-size: 30px;
+  }
+  .catalog__coll-title img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: -4px;
+  }
+  .catalog__coll-subtitle {
+    max-width: 100%;
+    font-size: 19px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .catalog__coll-box {
+    padding: 50px 40px 55px;
+  }
+}
+@media (max-width: 1010px) {
+  .catalog {
+    padding-top: 160px;
+  }
+  .catalog__caption {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 15px;
+  }
+  .catalog__promo {
+    padding-top: 180px;
+    padding-bottom: 60px;
+  }
+  .catalog__promo-title {
+    font-size: 38px;
+  }
+  .catalog__promo-title img {
+    width: 33px;
+    height: 33px;
+  }
+  .catalog__request {
+    padding-bottom: 60px;
+  }
+  .catalog__request-box {
+    max-width: 630px;
+  }
+  .catalog__request-title {
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .catalog__row {
+    margin: 0 -10px -60px;
+  }
+  .catalog__coll {
+    width: calc(50% - 20px);
+    margin: 0 10px 60px;
+  }
+  .catalog__coll-img {
+    height: 200px;
+  }
+  .catalog__coll-title {
+    font-size: 25px;
+  }
+  .catalog__coll-title img {
+    width: 25px;
+    height: 25px;
+  }
+  .catalog__coll-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .catalog__coll-box {
+    padding: 30px 20px;
+  }
+  .catalog__coll-btn {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+  .catalog__coll-btn img {
+    width: 10px;
+    height: 20px;
+    margin-left: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .catalog {
+    padding-top: 140px;
+  }
+  .catalog__promo {
+    padding-top: 140px;
+    padding-bottom: 50px;
+  }
+  .catalog__promo-title {
+    font-size: 30px;
+  }
+  .catalog__promo-title img {
+    width: 30px;
+    height: 30px;
+  }
+  .catalog__promo-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .catalog__request-title {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    letter-spacing: 0px;
+  }
+  .catalog__request-btn {
+    font-size: 16px;
+  }
+  .catalog__row {
+    margin: 0 -10px -60px;
+  }
+  .catalog__coll {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .catalog__coll + .catalog__coll {
+    top: 0px;
+  }
+  .catalog__coll-img {
+    height: 200px;
+  }
+  .catalog__coll-title {
+    font-size: 23px;
+  }
+  .catalog__coll-title img {
+    width: 23px;
+    height: 23px;
+  }
+  .catalog__coll-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .catalog__coll-box {
+    padding: 30px 15px;
+  }
+  .catalog__coll-btn {
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+  .catalog__coll-btn img {
+    width: 10px;
+    height: 20px;
+    margin-left: 12px;
+  }
+}

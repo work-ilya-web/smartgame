@@ -1,0 +1,57 @@
+.about-partners {
+	background-color: #30333c;
+	&__body {
+		padding-top: 52px;
+		padding-bottom: 70px;
+		margin: 0px 60px;
+		background-color: #252831;
+	}
+	&__logos {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__logo {
+		width: 25%;
+		height: 206px;
+	}
+	&__icon {
+		height: 154px;
+		height: 86px;
+	}
+}
+@media (max-width: 1354px) {
+	.about-partners {
+		&__body {
+			padding-top: 50px;
+			padding-bottom: 50px;
+			margin: 0px;
+		}
+		&__logo {
+			height: 140px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.about-partners {
+		&__icon {
+			height: 100px;
+			height: 75px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.about-partners {
+		&__body {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		&__logo {
+			width: 50%;
+			height: 100px;
+		}
+		&__icon {
+			height: 100px;
+			height: 75px;
+		}
+	}
+}

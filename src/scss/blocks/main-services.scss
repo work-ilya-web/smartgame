@@ -1,0 +1,356 @@
+.main-services {
+	padding-top: 98px;
+	padding-bottom: 65px;
+	overflow: hidden;
+	&__top {
+		overflow: hidden;
+	}
+	&__scroll {
+		.scrollbar {
+			&-thumb {
+				background: rgba(255, 255, 255, 0.2);
+				cursor: pointer;
+			}
+			&-track {
+				&-x {
+					background-color: rgba(48, 51, 60, 0.8);
+					border-radius: 4px;
+					opacity: 1;
+				}
+				&-y {
+					display: none !important;
+				}
+			}
+		}
+	}
+	&__title {
+		text-align: center;
+		max-width: 850px;
+		margin: 0px auto 85px;
+	}
+	&__tabs {
+		display: flex;
+		align-items: center;
+		margin-right: -15px;
+		padding-bottom: 20px;
+		/*transition: all 0.3s;
+		&.active-1 {
+			transform: translateX(0px);
+			transition: all 0.3s;
+		}
+		&.active-2 {
+			transform: translateX(-340px);
+			transition: all 0.3s;
+		}
+		&.active-3 {
+			transform: translateX(-570px);
+			transition: all 0.3s;
+		}
+		&.active-4 {
+			transform: translateX(-792px);
+			transition: all 0.3s;
+		}
+		&.active-5 {
+			transform: translateX(-1022px);
+			transition: all 0.3s;
+		}
+		&.active-6 {
+			transform: translateX(-1270px);
+			transition: all 0.3s;
+		}*/
+	}
+	&__tab {
+		/*& + & {
+			margin-left: 16px;
+		}*/
+		display: flex;
+		align-items: center;
+		padding: 18px 25px;
+		font-size: 20px;
+		font-weight: 500;
+		border-radius: 30px;
+		background-color: rgba(48, 51, 60, 0.8);
+		white-space: nowrap;
+		cursor: pointer;
+		transition: all 0.3s;
+		margin-right: 15px;
+		&_1 {
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #f83b87 33%, #f6456d 66%, #f35445);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&_2 {
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #e5c90a 33%, #e9b30e 66%, #ed9914);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&_3 {
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #c33cc3 33%, #d41fa1 66%, #e5007d);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&_4 {
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #f83c86 33%, #f54961 66%, #f35445);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&_5 {
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #b759d2 33%, #9283dd 66%, #6cade8);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&_6 {
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #4bcec6 33%, #57bea6 66%, #69a474);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+		&.active,
+		&:hover {
+			background-color: #feeef0;
+			.main-services__tab-caption {
+				background: linear-gradient(45deg, #5e6066 33%, #5e6066 66%, #5e6066);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+	&__icon {
+		width: 25px;
+		height: 25px;
+		margin-right: 15px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+	&__body {
+		padding-top: 57px;
+		overflow: hidden;
+	}
+	&__block {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(50px);
+		transition: all 0s;
+		&.active {
+			position: relative;
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0px);
+			transition: all 0.8s;
+		}
+		&-wrap {
+			align-items: flex-start;
+		}
+	}
+	&__left {
+		width: 530px;
+		margin-top: 33px;
+		margin-left: 56px;
+		&-title {
+			background: linear-gradient(45deg, #f83b87 33%, #f54865 66%, #f35445);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 36px;
+			font-weight: 600;
+			letter-spacing: -0.25px;
+		}
+		&-subtitle {
+			font-size: 22px;
+			line-height: 32px;
+			margin-top: 32px;
+			margin-bottom: 39px;
+		}
+	}
+	&__right {
+		width: 560px;
+		margin-right: 54px;
+		&-img {
+			width: 100%;
+			height: 385px;
+		}
+		.slick-dots {
+			bottom: 44px;
+			text-align: right;
+			padding-right: 42px;
+			li {
+				width: 15px;
+				height: 15px;
+				margin: 0 5px;
+				&.slick-active {
+					button {
+						opacity: 1;
+					}
+				}
+				button {
+					width: 15px;
+					height: 15px;
+					border-radius: 50%;
+					cursor: pointer;
+					background-color: #ffffff;
+					opacity: 0.35;
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&__btn {
+		font-size: 18px;
+		padding: 16px 25px;
+		background-color: #30333c;
+		span {
+			position: relative;
+			z-index: 10;
+			background: linear-gradient(45deg, #f83b87 33%, #f54865 66%, #f35445);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		img {
+			width: 14px;
+			height: 24px;
+			margin-left: 12px;
+		}
+		&:hover {
+			img {
+				transform: translateX(2px);
+				transition: all 0.3s;
+			}
+		}
+	}
+}
+@media (max-width: 1354px) {
+	.main-services {
+		&__title {
+			max-width: 790px;
+			margin-bottom: 60px;
+		}
+		&__left {
+			width: 480px;
+			margin-top: 30px;
+			margin-left: 0;
+			&-title {
+				font-size: 33px;
+			}
+			&-subtitle {
+				font-size: 20px;
+				line-height: 30px;
+				margin-top: 25px;
+				margin-bottom: 30px;
+			}
+		}
+		&__right {
+			width: 500px;
+			margin-right: 0px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.main-services {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__body {
+			padding-top: 40px;
+		}
+		&__block {
+			&-wrap {
+				flex-wrap: wrap;
+			}
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__tab {
+			padding: 16px 25px;
+			font-size: 18px;
+		}
+		&__left {
+			width: 100%;
+			margin-top: 0px;
+			margin-left: 0;
+			order: 2;
+			&-title {
+				font-size: 30px;
+			}
+			&-subtitle {
+				font-size: 18px;
+				line-height: 30px;
+				margin-top: 15px;
+				margin-bottom: 20px;
+			}
+		}
+		&__right {
+			width: 100%;
+			order: 1;
+		}
+		&__btn {
+			img {
+				width: 10px;
+				height: 20px;
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.main-services {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__body {
+			padding-top: 20px;
+		}
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__tabs {
+			padding-bottom: 10px;
+		}
+		&__tab {
+			padding: 12px 20px;
+			font-size: 16px;
+		}
+		&__icon {
+			width: 22px;
+			height: 22px;
+			margin-right: 10px;
+		}
+		&__left {
+			&-title {
+				font-size: 24px;
+			}
+			&-subtitle {
+				font-size: 16px;
+				line-height: 26px;
+			}
+		}
+		&__right {
+			.slick-dots {
+				bottom: 25px;
+				padding-right: 10px;
+			}
+			&-img {
+				height: 260px;
+			}
+		}
+		&__btn {
+			font-size: 16px;
+			img {
+				margin-left: 10px;
+			}
+		}
+	}
+}

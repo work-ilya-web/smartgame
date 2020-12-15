@@ -1,0 +1,196 @@
+.main-umpeh {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+.main-umpeh__title {
+  text-align: center;
+  max-width: 900px;
+  margin: 0px auto 82px;
+}
+.main-umpeh__row {
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0px -30px;
+}
+.main-umpeh__coll {
+  width: calc(33.333% - 60px);
+  margin: 0px 30px;
+  position: relative;
+  z-index: 10;
+}
+.main-umpeh__coll:nth-child(2) .main-umpeh__btn {
+  background-image: linear-gradient(to right, #b759d2 0%, #6baee8 100%);
+}
+.main-umpeh__coll:nth-child(2) .main-umpeh__btn:after {
+  background-image: linear-gradient(to right, #b759d2 0%, #b759d2 100%);
+}
+.main-umpeh__coll:nth-child(3) .main-umpeh__btn {
+  background-image: linear-gradient(to right, #c33cc3 0%, #e5007d 100%);
+}
+.main-umpeh__coll:nth-child(3) .main-umpeh__btn:after {
+  background-image: linear-gradient(to right, #c33cc3 0%, #c33cc3 100%);
+}
+.main-umpeh__img {
+  width: 100%;
+  height: 288px;
+  position: relative;
+  z-index: 10;
+}
+.main-umpeh__img:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(37, 40, 49, 0.3);
+}
+.main-umpeh__box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 15;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 35px 30px;
+  flex-wrap: wrap;
+}
+.main-umpeh__caption {
+  width: 100%;
+  font-size: 25px;
+  line-height: 29.04px;
+  margin-bottom: 20px;
+  margin-left: 2px;
+}
+.main-umpeh__caption strong {
+  display: block;
+  width: 100%;
+  height: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.26px;
+  margin-bottom: 10px;
+}
+.main-umpeh__caption img {
+  width: 18px;
+  height: 29px;
+  object-fit: contain;
+  margin-left: 5px;
+  display: inline-block;
+  margin-bottom: -8px;
+}
+.main-umpeh__btn {
+  display: inline-flex;
+  padding: 12px 25px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #4bcec6 0%, #69a474 100%);
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.main-umpeh__btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background-image: linear-gradient(to right, #4bcec6 0%, #4bcec6 100%);
+  z-index: -1;
+  transition: all 0.3s;
+}
+.main-umpeh__btn:hover:after {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.main-umpeh__bottom {
+  text-align: center;
+  margin-top: 68px;
+}
+.main-umpeh__button {
+  display: inline-block;
+  padding: 19px 31px;
+  border-radius: 31px;
+  border: 1px solid #c33cc3;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.main-umpeh__button:hover {
+  background-color: #c33cc3;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1354px) {
+  .main-umpeh__title {
+    margin-bottom: 60px;
+  }
+  .main-umpeh__row {
+    margin: 0px -10px;
+  }
+  .main-umpeh__coll {
+    width: calc(33.333% - 20px);
+    margin: 0px 10px;
+  }
+  .main-umpeh__box {
+    padding: 25px 15px;
+  }
+  .main-umpeh__caption {
+    font-size: 22px;
+    line-height: 26px;
+    margin-left: 0px;
+  }
+  .main-umpeh__caption img {
+    width: 15px;
+    height: 24px;
+    margin-bottom: -5px;
+  }
+  .main-umpeh__bottom {
+    margin-top: 45px;
+  }
+}
+@media (max-width: 1010px) {
+  .main-umpeh__title {
+    margin-bottom: 40px;
+  }
+  .main-umpeh__row {
+    justify-content: center;
+  }
+  .main-umpeh__coll {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+  }
+  .main-umpeh__bottom {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .main-umpeh {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main-umpeh__title {
+    margin-bottom: 30px;
+  }
+  .main-umpeh__coll {
+    width: 100%;
+  }
+  .main-umpeh__bottom {
+    margin-top: 20px;
+  }
+  .main-umpeh__button {
+    padding: 18px 30px;
+    font-size: 16px;
+  }
+}

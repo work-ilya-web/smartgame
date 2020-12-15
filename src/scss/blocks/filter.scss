@@ -1,0 +1,361 @@
+.filter {
+	background-color: #fff;
+	color: #30333c;
+	&__content {
+		padding-top: 70px;
+		padding-bottom: 80px;
+	}
+	&__top {
+		&-flex {
+			margin-bottom: 65px;
+		}
+		&-title {
+			font-size: 28px;
+			font-weight: 500;
+			letter-spacing: -0.2px;
+			strong {
+				font-size: 32px;
+				font-weight: 600;
+				letter-spacing: -0.22px;
+			}
+		}
+		&-caption {
+			color: #30333c;
+			font-size: 28px;
+			font-weight: 500;
+			text-align: center;
+			letter-spacing: -0.2px;
+			padding-bottom: 80px;
+		}
+	}
+	&__selected {
+		.select + .select {
+			margin-left: 35px;
+		}
+	}
+	&__box {
+		&:first-child {
+			.filter__row {
+				margin-bottom: -72px;
+			}
+		}
+		& + & {
+			margin-top: 83px;
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px -30px -135px;
+	}
+	&__coll {
+		width: calc(33.333% - 60px);
+		margin: 0px 30px 72px;
+		background-color: #feeef0;
+		&:nth-child(2n) {
+			background-color: #f9ddf0;
+			.main-popular__coll-btn {
+				background-image: linear-gradient(to right, #c33cc3 0%, #e5007d 100%);
+				&:after {
+					background-image: linear-gradient(to right, #c33cc3 0%, #c33cc3 100%);
+				}
+			}
+		}
+		&-top {
+			position: relative;
+			z-index: 10;
+			width: 100%;
+			height: 228px;
+			color: #fff;
+		}
+		&-box {
+			position: absolute;
+			width: 100%;
+			left: 0px;
+			bottom: 0px;
+			padding: 24px 41px;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			background-color: #30333c;
+		}
+		&-price {
+			font-weight: 500;
+			font-size: 24px;
+			margin-right: 16px;
+			small {
+				font-size: 18px;
+			}
+		}
+		&-bottom {
+			padding: 31px 29px 44px 43px;
+		}
+		&-questions {
+			position: relative;
+			z-index: 10;
+			cursor: pointer;
+			width: 22px;
+			height: 22px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+			&__hint {
+				position: absolute;
+				bottom: 45px;
+				left: calc(50% - 127.5px);
+				width: 255px;
+				background-color: #252831;
+				padding: 23px 18px;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 19px;
+				text-align: center;
+				visibility: hidden;
+				opacity: 0;
+				transform: translateY(-20px);
+				transition: all 0.3s;
+				&:after {
+					content: "";
+					position: absolute;
+					width: 0;
+					height: 0;
+					border-top: 10px solid transparent;
+					border-left: 15px solid #252831;
+					border-bottom: 10px solid transparent;
+					bottom: -15px;
+					left: calc(50% - 7.5px);
+					z-index: 10;
+					transform: rotate(90deg);
+				}
+			}
+			&:hover {
+				.filter__coll-questions__hint {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0px);
+					transition: all 0.3s;
+				}
+			}
+		}
+		&-caption {
+			display: block;
+			color: #252831;
+			font-size: 26px;
+			font-weight: 600;
+			letter-spacing: -0.26px;
+			img {
+				width: 11px;
+				height: 21px;
+				margin-left: 5px;
+				display: inline-block;
+				margin-bottom: -2px;
+				transition: all 0.3s;
+			}
+			&:hover {
+				img {
+					transform: translateX(5px);
+					transition: all 0.3s;
+				}
+			}
+		}
+		&-desc {
+			color: #252831;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 26px;
+			letter-spacing: -0.13px;
+			margin-top: 20px;
+			margin-bottom: 28px;
+		}
+		&-btn {
+			padding: 11px 24px;
+			font-size: 15px;
+			font-weight: 600;
+		}
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		img {
+			transition: all 0.3s;
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+				transition: all 0.3s;
+			}
+		}
+	}
+}
+@media (max-width: 1354px) {
+	.filter {
+		&__top {
+			&-title {
+				font-size: 22px;
+				strong {
+					font-size: 26px;
+				}
+			}
+			&-caption {
+				font-size: 22px;
+				padding-bottom: 50px;
+			}
+		}
+		&__row {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0px -10px -50px;
+		}
+		&__coll {
+			width: calc(33.333% - 20px);
+			margin: 0px 10px 50px;
+			&-box {
+				padding: 20px 15px;
+			}
+			&-price {
+				font-size: 20px;
+				small {
+					font-size: 15px;
+				}
+			}
+			&-bottom {
+				padding: 35px 15px 50px;
+			}
+			&-caption {
+				font-size: 24px;
+				img {
+					width: 10px;
+					height: 20px;
+				}
+			}
+			&-desc {
+				font-size: 16px;
+				line-height: 22px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			&-btn {
+				padding: 10px 24px;
+			}
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.filter {
+		&__top {
+			&-flex {
+				flex-wrap: wrap;
+				margin-bottom: 35px;
+			}
+			&-title {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			&-caption {
+				padding-bottom: 35px;
+			}
+		}
+		&__row {
+			justify-content: center;
+			margin-bottom: -100px;
+		}
+		&__coll {
+			width: calc(50% - 20px);
+			margin: 0px 10px 20px;
+			&-bottom {
+				padding: 25px 15px 30px;
+			}
+		}
+		&__box {
+			&:first-child {
+				.filter__row {
+					margin-bottom: -25px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 760px) {
+	.filter {
+		&__top {
+			&-title {
+				strong {
+					display: block;
+				}
+			}
+			&-caption {
+				padding-bottom: 25px;
+			}
+		}
+		&__selected {
+			flex-wrap: wrap;
+			.select {
+				width: 100%;
+				&-title {
+					display: inline-flex;
+					width: auto;
+				}
+			}
+			.select + .select {
+				margin-left: 0px;
+				margin-top: 10px;
+			}
+		}
+		&__content {
+			padding-top: 60px;
+		}
+		&__box {
+			&:first-child {
+				.filter__row {
+					margin-bottom: -45px;
+				}
+			}
+		}
+		&__coll {
+			width: 100%;
+			&-price {
+				font-size: 18px;
+			}
+			&-bottom {
+				padding: 20px 15px 25px;
+			}
+			&-caption {
+				font-size: 22px;
+				img {
+					width: 8px;
+					height: 16px;
+					object-fit: contain;
+					margin-bottom: -1px;
+				}
+			}
+			&-desc {
+				font-size: 14px;
+				line-height: 20px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			&-btn {
+				padding: 10px 24px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media (max-width: 350px) {
+	.filter {
+		&__coll {
+			& &-questions {
+				&__hint {
+					left: calc(50% - 155px);
+					&:after {
+						left: calc(50% + 19.5px);
+					}
+				}
+			}
+		}
+	}
+}

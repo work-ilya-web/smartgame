@@ -1,0 +1,233 @@
+.footer {
+  padding-top: 88px;
+  padding-bottom: 60px;
+}
+.footer__top {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+.footer__block {
+  width: 33.333%;
+}
+.footer__menu ul li + li {
+  margin-top: 16px;
+}
+.footer__menu ul li a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer__menu ul li a:hover {
+  color: #c33cc3;
+  transition: all 0.3s;
+}
+.footer__bottom {
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer__contacts-top {
+  justify-content: flex-start;
+}
+.footer__contacts-icon {
+  width: 20px;
+  height: 28px;
+  margin-right: 13px;
+}
+.footer__contacts-caption {
+  font-size: 24px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #c33cc3 33%, #d7199a 66%, #e5017e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer__contacts-desc {
+  max-width: 300px;
+  color: #71747a;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 16px;
+}
+.footer__phone {
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+.footer__phone-icon {
+  width: 26px;
+  height: 29px;
+  margin-right: 12px;
+}
+.footer__phone-caption {
+  color: #f3534a;
+  font-size: 24px;
+  font-weight: 600;
+  background: linear-gradient(45deg, #f83b87 33%, #f64767 66%, #f35446);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s;
+}
+.footer__phone:hover {
+  transition: all 0.3s;
+}
+.footer__mail {
+  display: block;
+  color: #71747a;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer__mail:hover {
+  color: #c33cc3;
+  transition: all 0.3s;
+}
+.footer__social-links {
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+.footer__social-link {
+  display: block;
+  width: 42px;
+  height: 42px;
+  transition: all 0.3s;
+}
+.footer__social-link + .footer__social-link {
+  margin-left: 12px;
+}
+.footer__social-link:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.footer__social-desc {
+  color: #71747a;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+}
+
+@media (max-width: 1354px) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .footer__menu ul li a {
+    font-size: 18px;
+  }
+  .footer__top {
+    margin-bottom: 80px;
+  }
+  .footer__contacts-icon {
+    width: 16px;
+    height: 24px;
+  }
+  .footer__contacts-caption {
+    font-size: 22px;
+  }
+  .footer__contacts-desc {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 15px;
+  }
+  .footer__phone-icon {
+    width: 22px;
+    height: 25px;
+  }
+  .footer__phone-caption {
+    font-size: 20px;
+  }
+  .footer__mail {
+    font-size: 16px;
+  }
+  .footer__social-desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1010px) {
+  .footer {
+    padding-top: 60px;
+  }
+  .footer__block {
+    width: 31%;
+  }
+  .footer__menu ul li a {
+    font-size: 16px;
+  }
+  .footer__top {
+    margin-bottom: 60px;
+  }
+  .footer__contacts-icon {
+    width: 14px;
+    height: 22px;
+  }
+  .footer__contacts-caption {
+    font-size: 20px;
+  }
+  .footer__contacts-desc {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  .footer__phone-icon {
+    width: 20px;
+    height: 22px;
+  }
+  .footer__phone-caption {
+    font-size: 18px;
+  }
+  .footer__mail {
+    font-size: 13px;
+  }
+  .footer__social-desc {
+    font-size: 13px;
+  }
+  .footer__social-links {
+    margin-bottom: 20px;
+  }
+  .footer__social-link {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (max-width: 760px) {
+  .footer {
+    padding-top: 40px;
+  }
+  .footer__block {
+    width: 100%;
+  }
+  .footer__menu + .footer__menu {
+    margin-top: 16px;
+  }
+  .footer__menu ul li a {
+    font-size: 16px;
+  }
+  .footer__top {
+    margin-bottom: 40px;
+  }
+  .footer__contacts {
+    margin-bottom: 25px;
+  }
+  .footer__contacts-desc {
+    max-width: 220px;
+  }
+  .footer__phone-icon {
+    width: 20px;
+    height: 22px;
+  }
+  .footer__phone-caption {
+    font-size: 18px;
+  }
+  .footer__phone {
+    margin-bottom: 15px;
+  }
+  .footer__social {
+    margin-top: 25px;
+  }
+  .footer__social-links {
+    margin-bottom: 16px;
+    justify-content: flex-start;
+  }
+  .footer__social-desc {
+    text-align: left;
+  }
+}

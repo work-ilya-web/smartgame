@@ -1,0 +1,323 @@
+.main-popular {
+  padding-top: 85px;
+  padding-bottom: 65px;
+  background-color: #1e2128;
+}
+.main-popular__top {
+  margin-bottom: 54px;
+}
+.main-popular__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.22px;
+}
+.main-popular__link {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: -0.17px;
+}
+.main-popular__link span {
+  background: linear-gradient(45deg, #c33cc3 33%, #d61a9b 66%, #e5007d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-popular__link img {
+  width: 11px;
+  height: 21px;
+  margin-left: 15px;
+  display: inline-block;
+  margin-bottom: -3px;
+  transition: all 0.3s;
+}
+.main-popular__link:hover img {
+  transform: translateX(5px);
+  transition: all 0.3s;
+}
+.main-popular__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -30px;
+}
+.main-popular__coll {
+  width: calc(33.333% - 60px);
+  margin: 0px 30px;
+  background-color: #feeef0;
+}
+.main-popular__coll:nth-child(2n) {
+  background-color: #f9ddf0;
+}
+.main-popular__coll:nth-child(2n) .main-popular__coll-btn {
+  background-image: linear-gradient(to right, #c33cc3 0%, #e5007d 100%);
+}
+.main-popular__coll:nth-child(2n) .main-popular__coll-btn:after {
+  background-image: linear-gradient(to right, #c33cc3 0%, #c33cc3 100%);
+}
+.main-popular__coll-top {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 228px;
+}
+.main-popular__coll-box {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  padding: 24px 41px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #30333c;
+}
+.main-popular__coll-price {
+  font-weight: 500;
+  font-size: 24px;
+  margin-right: 16px;
+}
+.main-popular__coll-price small {
+  font-size: 18px;
+}
+.main-popular__coll-bottom {
+  padding: 46px 25px 55px;
+}
+.main-popular__coll-caption {
+  color: #252831;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.26px;
+}
+.main-popular__coll-caption img {
+  width: 11px;
+  height: 21px;
+  margin-left: 5px;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+.main-popular__coll-desc {
+  color: #252831;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.13px;
+  margin-top: 20px;
+  margin-bottom: 27px;
+}
+.main-popular__coll-btn {
+  display: inline-block;
+  padding: 11px 24px;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #f83b87 0%, #f35445 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+.main-popular__coll-btn:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background-image: linear-gradient(to right, #f83b87 0%, #f83b87 100%);
+  z-index: -1;
+  transition: all 0.3s;
+}
+.main-popular__coll-btn:hover:after {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.main-popular__img {
+  width: 100%;
+  height: 100%;
+}
+.main-popular__bottom {
+  text-align: center;
+  margin-top: 62px;
+}
+.main-popular__button {
+  display: inline-block;
+  padding: 21px 48px;
+  border-radius: 31px;
+  border: 1px solid #676a70;
+  background-color: transparent;
+  color: #676a70;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.main-popular__button:hover {
+  color: #fff;
+  border-color: #c33cc3;
+  background-color: #c33cc3;
+  transition: all 0.3s;
+}
+.main-popular_white {
+  background-color: #feeef0;
+}
+.main-popular_white .main-popular__title,
+.main-popular_white .main-popular__link span {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-popular_white .main-popular__coll {
+  background-color: #fff;
+}
+.main-popular_white .main-popular__button {
+  background: linear-gradient(45deg, #f83b87 33%, #f35445 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-color: #f83b87;
+}
+
+@media (max-width: 1354px) {
+  .main-popular__top {
+    margin-bottom: 40px;
+  }
+  .main-popular__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .main-popular__link {
+    font-size: 20px;
+  }
+  .main-popular__link img {
+    margin-left: 10px;
+  }
+  .main-popular__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -10px;
+  }
+  .main-popular__coll {
+    width: calc(33.333% - 20px);
+    margin: 0px 10px;
+  }
+  .main-popular__coll-box {
+    padding: 20px 15px;
+  }
+  .main-popular__coll-price {
+    font-size: 20px;
+  }
+  .main-popular__coll-price small {
+    font-size: 15px;
+  }
+  .main-popular__coll-bottom {
+    padding: 35px 15px 50px;
+  }
+  .main-popular__coll-caption {
+    font-size: 24px;
+  }
+  .main-popular__coll-caption img {
+    width: 10px;
+    height: 20px;
+  }
+  .main-popular__coll-desc {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .main-popular__coll-btn {
+    padding: 10px 24px;
+  }
+  .main-popular__bottom {
+    margin-top: 40px;
+  }
+  .main-popular__button {
+    padding: 18px 35px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1010px) {
+  .main-popular__top {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  .main-popular__title {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-popular__link {
+    font-size: 20px;
+  }
+  .main-popular__link img {
+    margin-left: 10px;
+  }
+  .main-popular__row {
+    justify-content: center;
+  }
+  .main-popular__coll {
+    width: calc(50% - 20px);
+    margin: 0px 10px 20px;
+  }
+  .main-popular__coll-bottom {
+    padding: 25px 15px 30px;
+  }
+  .main-popular__bottom {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 760px) {
+  .main-popular {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .main-popular__top {
+    margin-bottom: 30px;
+  }
+  .main-popular__title {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .main-popular__link {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  .main-popular__link img {
+    width: 10px;
+    height: 19px;
+    margin-left: 5px;
+  }
+  .main-popular__coll {
+    width: 100%;
+  }
+  .main-popular__coll-price {
+    font-size: 18px;
+  }
+  .main-popular__coll-bottom {
+    padding: 20px 15px 25px;
+  }
+  .main-popular__coll-caption {
+    font-size: 22px;
+  }
+  .main-popular__coll-caption img {
+    width: 8px;
+    height: 16px;
+    object-fit: contain;
+    margin-bottom: -1px;
+  }
+  .main-popular__coll-desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .main-popular__coll-btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  .main-popular__bottom {
+    margin-top: 10px;
+  }
+  .main-popular__button {
+    padding: 16px 32px;
+    font-size: 15px;
+  }
+}

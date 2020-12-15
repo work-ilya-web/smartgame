@@ -1,0 +1,41 @@
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.breadcrumbs ul li {
+  padding-right: 17px;
+}
+.breadcrumbs ul li:after {
+  content: "/";
+  position: absolute;
+  color: rgba(180, 180, 180, 0.35);
+  font-size: 16px;
+  font-weight: 500;
+  top: 0px;
+  right: 5px;
+}
+.breadcrumbs ul li:last-child:after {
+  display: none;
+}
+.breadcrumbs ul li,
+.breadcrumbs ul a {
+  color: rgba(180, 180, 180, 0.35);
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.breadcrumbs ul a:hover {
+  color: #ff4545;
+  transition: all 0.3s;
+}

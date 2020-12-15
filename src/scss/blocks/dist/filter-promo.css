@@ -1,0 +1,108 @@
+.filter-promo {
+  padding-top: 184px;
+  padding-bottom: 21px;
+  background-color: #30333c;
+}
+.filter-promo__top {
+  text-align: center;
+}
+.filter-promo__top-link {
+  display: inline-flex;
+  color: #30333b;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 39.18px;
+  letter-spacing: -0.17px;
+  background: linear-gradient(45deg, #c33cc3 33%, #e5007d 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 25px;
+  margin-left: -5px;
+}
+.filter-promo__top-link img {
+  width: 14px;
+  height: 23px;
+  display: inline-block;
+  object-fit: contain;
+  margin-top: 10px;
+  margin-left: 12px;
+  transition: all 0.3s;
+}
+.filter-promo__top-link:hover img {
+  transform: translateX(10px);
+  transition: all 0.3s;
+}
+.filter-promo__form-body {
+  width: 662px;
+  margin: 82px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.filter-promo__form-desc {
+  color: #b4b4b4;
+  opacity: 0.35;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 53px;
+}
+.filter-promo .breadcrumbs ul {
+  justify-content: center;
+}
+.filter-promo .page-top {
+  margin-bottom: 0px;
+}
+.filter-promo .page-top__title {
+  max-width: 100%;
+  color: #fff;
+}
+
+@media (max-width: 1354px) {
+  .filter-promo__top-link {
+    font-size: 22px;
+  }
+  .filter-promo__form-body {
+    margin: 60px auto 0;
+  }
+}
+@media (max-width: 1010px) {
+  .filter-promo {
+    padding-top: 160px;
+    padding-bottom: 20px;
+  }
+  .filter-promo__top-link {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .filter-promo__top-link img {
+    width: 10px;
+    height: 20px;
+    margin-left: 12px;
+  }
+  .filter-promo__form-body {
+    margin: 40px auto 0;
+    width: 100%;
+  }
+  .filter-promo__form-desc {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 760px) {
+  .filter-promo {
+    padding-top: 140px;
+  }
+  .filter-promo__top-link {
+    font-size: 18px;
+  }
+  .filter-promo__form-body {
+    margin-top: 20px;
+  }
+  .filter-promo__form-desc {
+    margin-top: 40px;
+  }
+  .filter-promo__form .sliders + .sliders {
+    margin-top: 30px;
+  }
+}

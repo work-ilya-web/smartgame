@@ -1,0 +1,174 @@
+.programs-recomendation {
+  padding-top: 87px;
+  padding-bottom: 65px;
+  background-color: #fff;
+}
+.programs-recomendation__title {
+  color: #252831;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.22px;
+  margin-bottom: 55px;
+}
+.programs-recomendation__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -30px -64px;
+}
+.programs-recomendation__coll {
+  width: calc(33.333% - 60px);
+  margin: 0px 30px 64px;
+  background-color: #fcf3db;
+}
+.programs-recomendation__coll:nth-child(2n) {
+  background-color: #f9ddf0;
+}
+.programs-recomendation__coll:nth-child(3n) {
+  background-color: #fee4e8;
+}
+.programs-recomendation__img {
+  display: block;
+  width: 100%;
+  height: 228px;
+  overflow: hidden;
+}
+.programs-recomendation__img img {
+  transition: all 0.3s;
+}
+.programs-recomendation__img:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.programs-recomendation__box {
+  padding: 40px 44px 45px;
+}
+.programs-recomendation__caption {
+  display: block;
+  color: #252831;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.26px;
+  margin-bottom: 20px;
+}
+.programs-recomendation__caption img {
+  width: 32px;
+  height: 32px;
+  margin-right: 11px;
+  display: inline-block;
+  margin-left: -3px;
+  margin-bottom: -6px;
+}
+.programs-recomendation__desc {
+  color: #252831;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.13px;
+  margin-bottom: 25px;
+}
+.programs-recomendation__btn {
+  font-size: 15px;
+  padding: 12px 19px;
+}
+.programs-recomendation__btn img {
+  width: 10px;
+  height: 17px;
+  margin-left: 10px;
+}
+.programs-recomendation__bottom {
+  text-align: center;
+  margin-top: 62px;
+}
+.programs-recomendation__button {
+  display: inline-block;
+  padding: 19px 48px;
+  border-radius: 31px;
+  border: 1px solid #b4b4b4;
+  background-color: transparent;
+  color: #252831;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1354px) {
+  .programs-recomendation {
+    padding-top: 80px;
+  }
+  .programs-recomendation__title {
+    margin-bottom: 35px;
+  }
+  .programs-recomendation__row {
+    margin: 0 -10px -50px;
+  }
+  .programs-recomendation__coll {
+    width: calc(33.333% - 20px);
+    margin: 0 10px 50px;
+  }
+  .programs-recomendation__img {
+    height: 180px;
+  }
+  .programs-recomendation__box {
+    padding: 30px 20px 35px;
+  }
+  .programs-recomendation__caption {
+    font-size: 22px;
+  }
+  .programs-recomendation__caption img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+  .programs-recomendation__desc {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 21px;
+  }
+  .programs-recomendation__bottom {
+    margin-top: 50px;
+  }
+  .programs-recomendation__button {
+    padding: 16px 45px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1010px) {
+  .programs-recomendation {
+    padding-top: 60px;
+  }
+  .programs-recomendation__title {
+    margin-bottom: 25px;
+  }
+  .programs-recomendation__row {
+    margin: 0 -15px -30px;
+  }
+  .programs-recomendation__coll {
+    width: calc(50% - 30px);
+    margin: 0 15px 30px;
+  }
+  .programs-recomendation__bottom {
+    margin-top: 50px;
+  }
+  .programs-recomendation__button {
+    padding: 16px 45px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 760px) {
+  .programs-recomendation__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  .programs-recomendation__row {
+    margin: 0 -15px -15px;
+  }
+  .programs-recomendation__coll {
+    width: 100%;
+    margin: 0 15px 15px;
+  }
+  .programs-recomendation__bottom {
+    margin-top: 30px;
+  }
+}

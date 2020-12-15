@@ -1,0 +1,52 @@
+.about-partners {
+  background-color: #30333c;
+}
+.about-partners__body {
+  padding-top: 52px;
+  padding-bottom: 70px;
+  margin: 0px 60px;
+  background-color: #252831;
+}
+.about-partners__logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-partners__logo {
+  width: 25%;
+  height: 206px;
+}
+.about-partners__icon {
+  height: 154px;
+  height: 86px;
+}
+
+@media (max-width: 1354px) {
+  .about-partners__body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px;
+  }
+  .about-partners__logo {
+    height: 140px;
+  }
+}
+@media (max-width: 1010px) {
+  .about-partners__icon {
+    height: 100px;
+    height: 75px;
+  }
+}
+@media (max-width: 760px) {
+  .about-partners__body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .about-partners__logo {
+    width: 50%;
+    height: 100px;
+  }
+  .about-partners__icon {
+    height: 100px;
+    height: 75px;
+  }
+}

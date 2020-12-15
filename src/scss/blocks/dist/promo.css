@@ -1,0 +1,133 @@
+.promo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 114px;
+}
+.promo .wrapper {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.promo__wrap {
+  width: 100%;
+  align-items: flex-end;
+}
+.promo__wrap-box {
+  max-width: 655px;
+}
+.promo__box {
+  max-width: 655px;
+}
+.promo__subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 22px;
+  margin-bottom: 47px;
+}
+.promo__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.promo__bg:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: linear-gradient(to top, rgba(5, 5, 23, 0) 0%, rgba(5, 5, 23, 0.2) 100%);
+  z-index: 0;
+}
+.promo__bg-slick {
+  height: 100%;
+}
+.promo__bg-slick .slick-list {
+  height: 100%;
+}
+.promo__bg-img {
+  height: 100vh;
+}
+.promo__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.promo__line {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 0px;
+  bottom: 0px;
+  z-index: 10;
+  background-image: linear-gradient(to left, #fff04e 0%, #e5007d 50%, #a976dd 75%, #63aea8 100%);
+}
+.promo .arrow + .arrow {
+  margin-left: 8px;
+}
+
+@media (max-width: 1354px) {
+  .promo__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 1010px) {
+  .promo__box, .promo__wrap-box {
+    max-width: 560px;
+  }
+  .promo__subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 760px) {
+  .promo {
+    padding-bottom: 20px;
+  }
+  .promo .arrows {
+    display: none;
+  }
+  .promo__box, .promo__wrap-box {
+    max-width: 100%;
+  }
+  .promo__subtitle {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .promo__slick {
+    padding-bottom: 40px;
+  }
+  .promo .slick-dots {
+    bottom: 0px;
+  }
+  .promo .slick-dots li {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+  }
+  .promo .slick-dots li.slick-active button {
+    opacity: 1;
+  }
+  .promo .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    opacity: 0.35;
+  }
+  .promo .slick-dots li button:before {
+    display: none;
+  }
+}

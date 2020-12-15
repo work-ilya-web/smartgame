@@ -1,0 +1,162 @@
+<div id="callback-modal" class="callback-modal modal" style="display: none;">
+    <div class="modal__closed flex-center" data-fancybox-close>
+		<img src="img/icon/closed.png" alt="">
+		<span>Закрыть</span>
+    </div>
+    <form class="modal__form">
+        <div class="modal__title">Есть вопрос? Задайте его нам!</div>
+        <div class="modal__form-body">
+			<div class="modal__form-box flex-center">
+				<div class="modal__form-caption">Привет, меня зовут</div>
+				<div class="modal__form-input">
+					<input type="text" name="name_parent" class="modal__form-field field" data-error="Укажите ваше имя"  placeholder=""> <span>,</span>
+				</div>
+			</div>
+			<div class="modal__form-box flex-center">
+				<div class="modal__form-caption">я хотел бы подробнее узнать про</div>
+				<div class="modal__form-input">
+					<input type="text" name="name_parent" class="modal__form-field field" data-error="Укажите интересующий раздел"  placeholder=""> <span>.</span>
+				</div>
+			</div>
+			<div class="modal__form-box flex-center">
+				<div class="modal__form-caption">Мне можно позвонить по телефону</div>
+				<div class="modal__form-input">
+					<input type="text" name="name_parent" class="modal__form-field field phone-mask" data-error="Укажите ваш телефон"  placeholder="">
+				</div>
+			</div>
+			<div class="modal__form-box flex-center">
+				<div class="modal__form-caption">или написать на почту</div>
+				<div class="modal__form-input">
+					<input type="text" name="name_parent" class="modal__form-field field" data-error="Укажите ваш email"  placeholder=""> <span>!</span>
+					<div class="modal__form-error">Формат адреса почты указан неверно</div>
+				</div>
+			</div>
+        </div>
+        <div class="modal__form-bottom">
+            <button class="modal__form-btn thanks--js">Отправить</button>
+            <div class="modal__form-agreement">Нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных.</div>
+        </div>
+    </form>
+</div><!-- end callback-modal -->
+
+<div id="thanks-modal" class="thanks-modal modal" style="display: none;">
+    <div class="modal__closed flex-center" data-fancybox-close>
+		<img src="img/icon/closed.png" alt="">
+		<span>Закрыть</span>
+    </div>
+    <form class="thanks-modal__box">
+        <div class="modal__title">Спасибо!</div>
+        <div class="modal__subtitle">В ближайшее время мы свяжемся с вами
+			и ответим на все интересующие вас вопросы!</div>
+    </form>
+</div><!-- end thanks-modal -->
+
+<div id="reviews-modal" class="reviews-modal modal" style="display: none;">
+    <div class="modal__closed flex-center" data-fancybox-close>
+		<img src="img/icon/closed.png" alt="">
+		<span>Закрыть</span>
+    </div>
+    <div class="reviews-modal__body">
+		<div class="reviews-modal__box">
+			<div class="reviews-modal__top">
+				<div class="reviews-modal__icon flex-center">
+					<img src="img/main-reviews/modal-icon.svg" alt="">
+				</div>
+				<div class="reviews-modal__text">От лица всех сотрудников агентства "МТС", принимавших участие в мероприятие, искренне хотелось бы поблагодарить команду Смарт Геймс за великолепно проведённый тимбилдинг! Всё было ярко, динамично, с креативным и детально проработанным сценарием. Состав инструкторов – настоящие профессионалы своего дела! Обязательно будем заказывать у вас тимбилдинг ещё раз! Спасибо!</div>
+			</div>
+			<div class="reviews-modal__profile flex">
+				<div class="reviews-modal__avatar img-cover">
+					<img src="img/main-reviews/img-2.jpg" alt="">
+				</div>
+				<div class="reviews-modal__name">Анжелика, ФСК-Лидер</div>
+			</div>
+		</div>
+	</div>
+</div><!-- end reviews-modal -->
+
+<div id="estimate-modal" class="estimate-modal" style="display: none;">
+    <div class="estimate-modal__body flex">
+		<div class="estimate-modal__left">
+			<div class="estimate-modal__left-top">
+				<div class="estimate-modal__left-bg img-cover">
+					<img src="img/card-promo/bg.jpg" alt="">
+				</div>
+				<div class="estimate-modal__left-caption">На абордаж!</div>
+				<div class="estimate-modal__left-title">Расчетная смета*
+					на 50 участников</div>
+			</div>
+			<div class="estimate-modal__bottom">
+				<div class="estimate-modal__bottom-caption">Предварительная стоимость</div>
+				<div class="estimate-modal__bottom-price"><span>225 000</span> руб.</div>
+				<div class="estimate-modal__fork flex">
+					<div class="estimate-modal__fork-icon img-contain">
+						<img src="img/icon/fork.png" alt="">
+					</div>
+					<div class="estimate-modal__fork-value">150 000—275 000</div>
+					<div class="estimate-modal__fork-questions img-contain">
+						<img src="img/card-promo/questions.svg" alt="">
+						<div class="estimate-modal__fork-questions__hint">Примерная “вилка” цен. Стоимость может меняться в зависимости от выбранных опций, даты и других условий.</div>
+					</div>
+				</div>
+				<div class="estimate-modal__dots img-contain">
+					<img src="img/card-promo/dots.png" alt="">
+				</div>
+				<div class="estimate-modal__bottom-agreement">*Мы отправляем вам универсальную смету. Итоговая стоимость программы зависит от выбранных опций.</div>
+			</div>
+		</div>
+		<form action="#" class="estimate-modal__right">
+			<div class="estimate-modal__right-box">
+				<div class="estimate-modal__right-title">Просто укажите адрес почты, на который отправить смету. Робот пришлет все автоматически. </div>
+				<input type="email" name="email" class="estimate-modal__right-field field" data-error="Укажите ваш email"  placeholder="Ваш email">
+				<div class="estimate-modal__right-error">*Мы не отправляем информацию на адреса вида @gmail.com, @mail.ru и т.п. Пожалуйста, укажите свой рабочий/корпоративный адрес. Или напишите нам: play@smartgames.pro.</div>
+				<button class="estimate-modal__right-btn">Отправить</button>
+				<div class="estimate-modal__right-agreement">Нажимая на кнопку «Отправить» вы даете согласие на обработку персональных данных.</div>
+			</div>
+			<div class="estimate-modal__right-thanks">
+				<div class="estimate-modal__right-title">Спасибо!<br>
+					В ближайшее время вы получите письмо с расчетной сметой на указанную почту.</div>
+			</div>
+		</form>
+	</div>
+</div><!-- end estimate-modal -->
+
+<div id="gallery-modal" class="gallery-modal modal" style="display: none;">
+	<div class="gallery-modal__wrap">
+		<div class="modal__closed flex-center" data-fancybox-close>
+			<img src="img/icon/closed-gray.png" alt="">
+			<span>Закрыть</span>
+		</div>
+		<div class="gallery-modal__caption"><strong>KUKA </strong>Цепная реакция</div>
+		<div class="gallery-modal__body ">
+			<div class="arrow arrow_prev">
+				<svg xmlns="http://www.w3.org/2000/svg" width="19" height="32" viewBox="0 0 19 32">
+					<path fill="none" stroke="#252831" stroke-linecap="round" stroke-miterlimit="20" stroke-width="3.5"
+						d="M17 30v0L3 16v0L17 2v0" />
+				</svg>
+			</div>
+			<div class="gallery-modal__slick">
+				<div class="gallery-modal__slide">
+					<div class="gallery-modal__img img-cover">
+						<img src="img/gallery-modal/img-1.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery-modal__slide">
+					<div class="gallery-modal__img img-cover">
+						<img src="img/proect-promo/img-1.jpg" alt="">
+					</div>
+				</div>
+				<div class="gallery-modal__slide">
+					<div class="gallery-modal__img img-cover">
+						<img src="img/proect-promo/img-2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="arrow arrow_next">
+				<svg xmlns="http://www.w3.org/2000/svg" width="19" height="32" viewBox="0 0 19 32">
+					<path fill="none" stroke="#252831" stroke-linecap="round" stroke-miterlimit="20" stroke-width="3.5"
+						d="M2 2v0l14 14v0L2 30v0" />
+				</svg>
+			</div>
+		</div>
+	</div>
+</div><!-- end gallery-modal -->

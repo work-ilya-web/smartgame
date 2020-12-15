@@ -1,0 +1,107 @@
+@@include('inc/doc-start.html', {
+"title": "Контакты"
+})
+
+@@include('inc/page-header.html', {
+color: 'header--light'
+})
+
+<div class="contacts">
+	<div class="wrapper">
+		<div class="breadcrumbs">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li>Контакты</li>
+			</ul>
+		</div>
+		<div class="contacts__row">
+			<div class="contacts__coll">
+				<div class="contacts__title">Мы здесь</div>
+				<div class="contacts__desc">Москва, Волгоградский пр-кт,
+					дом 32, стр. 29</div>
+				<div class="contacts__button flex">
+					<a href="#" class="contacts__btn">Яндекс.Карты</a>
+					<a href="#" class="contacts__btn">Google Maps</a>
+				</div>
+			</div>
+			<div class="contacts__coll">
+				<div class="contacts__title">Как с нами связаться</div>
+				<div class="contacts__desc">
+					<a href="tel:+7 499 647 47 70">+7 499 647 47 70</a>
+					<a href="mailto:play@smartgames.pro">play@smartgames.pro</a>
+				</div>
+				<div class="contacts__social flex">
+					<a href="#" class="contacts__link img-contain">
+						<img src="img/main-callback/icon-1.png" alt="">
+					</a>
+					<a href="#" class="contacts__link img-contain">
+						<img src="img/main-callback/icon-2.png" alt="">
+					</a>
+					<a href="#" class="contacts__link img-contain">
+						<img src="img/main-callback/icon-3.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="contacts__body">
+			<div id="map"></div>
+		</div>
+	</div>
+</div>
+
+<div class="main-callback">
+	<div class="main-callback__line"></div>
+	<div class="main-callback__body">
+		<div class="wrapper">
+			<div class="main-callback__row">
+				<div class="main-callback__coll">
+					<div class="main-callback__title">Есть вопросы?</div>
+					<div class="main-callback__subtitle">Мы всегда рады ответить на все ваши вопросы. Звоните или пишите
+						куда угодно мы на связи почти 24/7</div>
+					<div class="main-callback__contacts flex">
+						<div class="main-callback__left">
+							<a href="tel:+7 499 647 47 70" class="main-callback__tel">+7 499 647 47 70</a>
+							<a href="mailto:play@smartgames.pro" class="main-callback__mail">play@smartgames.pro</a>
+						</div>
+						<div class="main-callback__social flex">
+							<a href="#" class="main-callback__link">
+								<div class="main-callback__icon img-contain">
+									<img src="img/main-callback/icon-1.png" alt="">
+								</div>
+								<div class="main-callback__link-caption">Telegram</div>
+							</a>
+							<a href="#" class="main-callback__link">
+								<div class="main-callback__icon img-contain">
+									<img src="img/main-callback/icon-2.png" alt="">
+								</div>
+								<div class="main-callback__link-caption">Messenger</div>
+							</a>
+							<a href="#" class="main-callback__link">
+								<div class="main-callback__icon img-contain">
+									<img src="img/main-callback/icon-3.png" alt="">
+								</div>
+								<div class="main-callback__link-caption">Whatsapp</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-callback__coll">
+					<div class="main-callback__title">Хотите заказать программу?</div>
+					<div class="main-callback__subtitle">Мы всегда рады ответить на все ваши вопросы. Звоните или пишите
+						куда угодно мы на связи почти 24/7</div>
+					<a href="#" class="main-callback__btn btn callback--js">
+						<span>Рассчитать программу</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;"></script>
+
+@@include('inc/modal.html')
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')
