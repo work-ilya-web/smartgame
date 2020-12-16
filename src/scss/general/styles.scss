@@ -42,6 +42,13 @@ body.lock-bg {
 		transition: all 0.3s;
 	}
 }
+body.dark {
+	&:after {
+		opacity: 0.65;
+		visibility: visible;
+		transition: all 0.3s;
+	}
+}
 body.lock {
 	overflow: hidden;
 	height: 100vh;
